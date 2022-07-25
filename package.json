@@ -1,0 +1,39 @@
+{
+    "name": "kind2-lang",
+    "displayName": "Kind2 Lang",
+    "description": "Syntax highlighting for the Kind2 language",
+    "version": "0.0.1",
+    "publisher": "Danfs",
+    "license": "SEE LICENSE IN LICENSE",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Danfs64/Kind2-Lang.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Danfs64/Kind2-Lang/issues"
+    },
+    "engines": {
+        "vscode": "^1.66.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "keywords": [
+        "Kind",
+        "Kind2",
+        "Kindelia"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "kind2",
+            "aliases": ["Kind2", "kind2"],
+            "extensions": [".kind2"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "kind2",
+            "scopeName": "source.kind2",
+            "path": "./syntaxes/kind2.tmLanguage.json"
+        }]
+    }
+}
